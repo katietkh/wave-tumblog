@@ -16,7 +16,7 @@
 
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    
+
     <!-- Bootstrap 3.x -->
     <link rel="stylesheet" href="http://static.tumblr.com/y15pkjg/q8Cn21fi6/bootstrap.min.css">
 
@@ -31,16 +31,16 @@
 
     <!-- SECONDARY COLOR -->
     <meta name="color:SecondaryColor" content="#00929F" />
-    
+
     <!-- TITLE COLOR -->
     <meta name="color:TitleColor" content="#444" />
 
     <!-- TEXT COLOR -->
     <meta name="color:TextColor" content="#333" />
-    
+
     <!-- LINK COLOR -->
     <meta name="color:LinkColor" content="#02919E" />
-    
+
     <!-- LINK HOVER COLOR -->
     <meta name="color:LinkHoverColor" content="#74cbc8" />
 
@@ -58,7 +58,7 @@
         // Fixed Sidebar
         $('.affix').affix();
     </script>
-    
+
     <style type="text/css">
         .box-border{-moz-box-sizing:border-box;box-sizing:border-box;webkit-box-sizing:border-box;}
         .ninja{display:none;}
@@ -121,12 +121,12 @@
         .dsq-comment-count {
             color: #4f555b;
         }
-        
+
         .gist .file-data {
             overflow: scroll;
             max-height: 300px;
         }
-        
+
         body{color:#4f555b;margin:40px 0; background-color: #E6E6E6;}
         body header #portrait{-moz-border-radius:128px;-webkit-border-radius:128px;border-radius:128px;display:block;margin:0 auto 20px;}
         body header #logo{font-family:Open Sans, Sans-Serif;margin-bottom:20px;color:{color:TitleColor};}
@@ -260,7 +260,7 @@
                                 {/block:IfWebsiteAddress}
                             </ul>
                         </div>
-                    
+
                     </header>
                 </div><!-- col-md-4 -->
                 <section class="content">
@@ -321,6 +321,8 @@
                             {/block:Link}
                             {block:Video}
                             <div class="video">
+                                {block:Title}<h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+                                {Body}
                                 {Video-500}
                                 {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
                             </div>
@@ -441,7 +443,7 @@
                             {/block:Chat}
                             {block:Answer}
                             <div class="answer">
-                                <p><img src="{AskerPortraitURL-24}">{Asker} asks:</p>   
+                                <p><img src="{AskerPortraitURL-24}">{Asker} asks:</p>
                                 <h3>{Question}</h3>
                                 <p>{Answer}</p>
                             </div>
@@ -457,9 +459,9 @@
                             {/block:IndexPage}
                         </article>
                         <span class="cover bottom"></span>
-                        {/block:Posts}                  
+                        {/block:Posts}
                         {block:PermalinkPagination}
-                        <div class="pagination group">  
+                        <div class="pagination group">
                             {block:PreviousPost}
                                 <a class="prev"href="{PreviousPost}">
                                     <i class="icon-arrow-left"></i>
